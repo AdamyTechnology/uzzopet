@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* medida a partir da caixa */
+  }
+  
+  html {
+    --bg-color: #edf2ff;
+    --text-color: #00082f;
+    --primary-color: #86592d;
+    --primary-color-dark: #604020;
+  }
+  
+  body {
+    background: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+  }
+  
+  body.degrade {
+    height: 100%;
+    background-image: linear-gradient(to bottom, #e8d9cf, #978e8a);
+    --text-color: black;
+    background-attachment: fixed;
+  }
+  
+  body.dark {
+    --bg-color: #00082f;
+    --text-color: white;
+  }
+  
+  body.pink {
+    --bg-color: #fff0f6;
+    --text-color: #1f000b;
+    --primary-color: #d6336c;
+    --primary-color-dark: #a61e4d;
+  }
+  
+  .container {
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  img.avatar {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding: 1px;
+    border: grey solid 4px;
+    background-size: cover;
+  }
+  h1 {
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .username {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 48px 0;
+  }
+  
+  ul li a {
+    display: flex;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    background: rgb(160, 181, 207);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    transition: background 400ms;
+    border: 2px solid white;
+  }
+  
+  ul li a:hover {
+    background-color: rgb(98, 177, 251);
+  }
+  
+  footer {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.6;
+    transition: opacity 400ms;
+  }
+  
+  footer:hover {
+    opacity: 1;
+  }
+  
+  footer a {
+    color: var(--text-color);
+  }
+  
+  a.whatsicon img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+  
+  a.cursoIcon img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    align-items: center;
+  }
+  
+  a.faceicon img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    align-items: center;
+  }
+  
+  a.instaicon img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    align-items: center;
+  }
+  
+  a.locIcon img {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    align-items: center;
+  }
